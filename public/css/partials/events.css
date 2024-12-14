@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.main-content {
+    margin-top: 35px;
+    display: flex;
+    flex: 1;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.breadcrumb a {
+    color: #229799;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Appointments Table */
+.appointments-table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.appointments-table th, .appointments-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Slot Management */
+.slot-management {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Space between appointments and slot management */
+    flex: 1; /* Allow it to take available space */
+}
+
+.slot-management h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.slot-management form {
+    display: flex;
+    flex-direction: column;
+}
+
+.slot-management label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.slot-management input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.slot-management button {
+    background-color: #229799;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.slot-management button:hover {
+    background-color: #48cfcb;
+}
+
+/* Delete All Slots Button */
+.delete-all-btn {
+    margin-top: 10px;
+    background-color: #ff4d4d; /* Red for delete action */
+}
+
+.delete-all-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Other existing styles remain unchanged... */

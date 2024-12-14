@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri';
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #254e59;
+}
+
+
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #081826;
+    
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.navbar ul li{
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    margin: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #72a5e2;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.navbar h3 {
+    color: #fff;
+    margin-left: 10px;
+    flex: 1;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.bTTn {
+    color: #fff;
+    background-color: #1b59a5; 
+    border-radius: 25px;
+    border: #1b59a5 solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.section1 {
+    position: center;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%),url(cover.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 85px;
+    width: auto;
+    height: 383px;
+}
+
+.bttn {
+    margin: 15px;
+    padding: 15px;
+}
+#bttN {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.section1 h1 {
+    font-size: 70px;
+    margin: 35px;
+}
+
+.section1 p {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+.section2 {
+    width: auto;
+    height: 685px;
+    position: center;
+    color: #fff;
+    padding: 50px;
+    background-color: #253C59;
+    flex-direction: column;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sectionHeader h1 {
+    font-size: 50px;
+}
+
+.sectionHeader p {
+    font-size: 25px;
+}
+
+.sectionimage img {
+    width: 350px;
+    height: 430px;
+    float: center;
+}
+
+.textboxContainer {
+    display: flex;
+    padding: 15px;
+    margin: 25px;
+    justify-content: space-around;
+}
+
+.textbox1, .textbox2 {
+    margin: 10px;
+    padding: 20px;
+    flex-direction: column;
+    max-width: auto;
+    height: 30%;
+    border-radius: 25px;
+    border: #fff solid;
+    transition: 100ms all;
+    transform-origin: right;
+    box-shadow: 0 5px 12px black;
+}
+
+.textbox1:hover, .textbox2:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.textbox1 h2, .textbox2 h2 {
+    font-size: 30px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.textbox1 p, .textbox2 p {
+    margin: 15px;
+    font-weight: 500;
+    width: auto;
+}
+
+
+/* Scroll Reveal Effect */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Styles for the new row3 section */
+.row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+
+.schedule-text {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #333;
+}
+
+.appointment-button-container {
+    display: inline-block;
+}
+
+.schedule-btn {
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.schedule-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.schedule-btn:active {
+    transform: scale(1); /* Return to original size on click */
+}
+
+
+.section3 {
+    width: auto;
+    height: 550px;
+    position: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+    background-color: #253C59;
+}
+
+.sectionHeader2 h1 {
+    font-size: 50px;
+    margin: 20px;
+    padding-top: 15px;
+}
+
+.sectionHeader2 h4 {
+    margin: 20px;
+    font-weight: 100;
+}
+
+.textBoxcontainer {
+    display: flex;
+    padding: 15px;
+    margin: 25px;
+    justify-content: space-around;
+    color: #000;
+}
+
+.container1, .container2, .container3 {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    max-width: auto;
+    height: auto;
+    border-radius: 25px;
+    border: #fff solid;
+    transition: 100ms all;
+    transform-origin: center;
+    box-shadow: 0 5px 12px black;
+}
+
+.container1:hover,.container2:hover,.container3:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.container1 h4, .container2 h4, .container3 h4 {
+    text-align: justify;
+    padding: 15px;
+}
+
+.container1 p, .container2 p, .container3 p {
+    text-align: justify;
+    padding: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    height: auto;
+    color: rgb(255, 255, 255);
+    padding: 35px;
+    background-color: #232525;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexcontainer, .flexcontainer2, .flexcontainer3 {
+    margin: 5px;
+}
+.flexcontainer2 a, .flexcontainer3 a {
+    color: #fff;
+}
+.flexcontainer2 {
+    text-align: center;
+}
+
+/* Login Form CSS */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #081826;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888; 
+    width: 450px;
+    max-height: 80%;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.foRGOT {
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    display: flex;
+}
+
+.modal-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 40px;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+label {
+    color: #fff;
+    margin: 10px 0 5px;
+    padding-left: 5px;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logbttn {
+    background-color: #0044CC;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 55%;
+    margin: 15px auto 0 auto;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.logbttn:hover {
+    background-color: #76df84;
+    border-radius: 25px;
+}
+
+/* Registration Form */
+/* Parallax Background */
+.row2 {
+    background: url('your-parallax-background-image.jpg') no-repeat fixed center;
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Grid Styling */
+.random-samples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Card Styling for iOS-like UI */
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.random-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text Styling */
+h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .random-samples {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Styles for the service selection dropdown */
+.styled-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.styled-select:hover {
+    border-color: #6200EE; /* Change border color on hover */
+}
+
+.styled-select:focus {
+    outline: none; /* Remove default outline */
+    border-color: #6200EE; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(98, 0, 238, 0.5); /* Add shadow on focus */
+}
+
+.service-options {
+    max-height: 150px; /* Set a max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Border for the options container */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color */
+    margin-top: 10px; /* Space above the options */
+}
+
+.service-option {
+    padding: 10px; /* Padding for each option */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.service-option:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.service-option h4 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Increase font size */
+    color: #6200EE; /* Primary color for headings */
+}
+
+.service-option p {
+    margin: 5px 0 0; /* Margin for paragraph */
+    font-size: 1em; /* Font size for readability */
+    color: #333; /* Darker color for text */
+}
+
+.password-container {
+    position: relative; /* Position relative for absolute positioning of the icon */
+}
+
+.toggle-password {
+    position: absolute; /* Position the icon absolutely */
+    right: 20px; /* Adjust the right position */
+    top: 30%; /* Move the icon higher (adjust this value as needed) */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    color: #6200EE; /* Icon color */
+}
+
+/* Optional: Add hover effect for the icon */
+.toggle-password:hover {
+    color: #0044CC; /* Change color on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .navbar h3 {
+        margin-left: 0; /* Remove left margin */
+        font-size: 1.2em; /* Smaller font size for mobile */
+    }
+
+    .logo {
+        width: 50px; /* Smaller logo for mobile */
+    }
+
+    .booking-form h2 {
+        font-size: 1.8em; /* Adjust header size for booking form */
+    }
+
+    .booking-form label {
+        font-size: 1em; /* Adjust label size */
+    }
+
+    .booking-form input {
+        font-size: 1em; /* Adjust input size */
+    }
+
+    .logbttn {
+        width: 100%; /* Full width for login button */
+        font-size: 1em; /* Adjust button font size */
+    }
+}

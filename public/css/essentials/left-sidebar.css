@@ -1,0 +1,226 @@
+
+/* User Profile Styling */
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: #E9EFEC;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.profile i {
+    font-size: 48px;
+    color: #48CFCB;
+    margin-right: 15px;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.profile-text {
+    flex-grow: 1;
+}
+
+.profile-text h4 {
+    color: #16423C;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-text p {
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile-text p:hover {
+    color: #48CFCB;
+    text-decoration: underline;
+}
+
+/* Adjust sidebar padding */
+.sidebar {
+    padding-top: 20px;
+}
+
+
+body.sidebar-visible {
+    grid-template-columns: 20% 1fr 20%; /* Added: Show sidebar when class is present */
+}
+
+/* Styles for when sidebar is hidden */
+body:not(.sidebar-visible) .sidebar {
+    left: -250px; /* Should match negative sidebar width */
+}
+
+body:not(.sidebar-visible) .main-content {
+    margin-left: 0;
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px; 
+    top: 0;
+    height: 100%;
+    width: 250px; /* Adjust width as needed */
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+
+body.sidebar-visible .sidebar {
+    left: 0; /* Move sidebar on-screen when visible */
+}
+
+.clinic-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar-content {
+    width: 250px; /* Or whatever width you want for your sidebar */
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #48CFCB;
+    padding: 10px 15px;
+}
+
+.sidebar .user-info {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar .user-info img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.sidebar ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #48CFCB;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.help-box {
+    margin-top: 30px;
+}
+
+.help-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.help-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sidebar-toggle {
+    background-color: #48CFCB;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .profile {
+        padding: 15px;
+    }
+
+    .profile-picture {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile i {
+        font-size: 36px;
+    }
+
+    .profile-text h4 {
+        font-size: 16px;
+    }
+
+    .profile-text p {
+        font-size: 12px;
+    }
+}
+
+/* Contact Information */
+.contact-info {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #E9EFEC;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    color: #16423C;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #48CFCB;
+}
+
+button:focus, a:focus {
+    outline: 2px solid #229799;
+    outline-offset: 2px;
+}
